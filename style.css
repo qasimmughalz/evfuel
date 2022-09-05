@@ -96,6 +96,9 @@
 
 
 /* ==================  SECTION 2 TRUSTPILOT ====================== */
+.trustpilot-widget #wrapper-company-info{
+    display: none !important;
+}
 .trustpilot_reviews .wrapper-company-info{
     display: none !important;
 }
@@ -728,5 +731,80 @@
 @media only screen and (max-width:500px) {
     .place-item {
         width: 100%;
+    }
+}
+
+
+/* =========== appricated ========== */
+.section-appricated{
+    width: 90%;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+.section-appricated .heading{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.3;
+    color: #333;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+}
+.section-appricated-imgwrap{
+    height: 350px;
+}
+.section-appricated_wrap{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-top: 64px;
+}
+.section-appricated_left{
+    width: 50%;
+}
+.section-appricated_right{
+    width: 50%;
+}
+.section-appricated_wrap img{
+    border-radius: 68px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-appricated_title h2{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:992px){
+    .section-appricated-imgwrap {
+        height: 250px;
+    }
+    .section-appricated_wrap img{
+        border-radius: 38px;
+    }
+}
+@media only screen and (max-width:768px){
+    .section-appricated_wrap{
+        gap: 30px;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .section-appricated_left, .section-appricated_right{
+        width: 100%;
+    }
+    .section-appricated-imgwrap {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .section-appricated .heading{
+        font-size: 25px;
+        line-height: 1.3;
+    }
+    .section-appricated_title h2{
+        font-size: 22px;
+        line-height: 36px;
     }
 }
