@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 .text-green{
     color:#8fc843
@@ -18,10 +19,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .hp-overlay-content h2 {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.36em;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 1.4;
 }
 .hp-banner::after{
     height: 100%;
@@ -45,22 +49,22 @@
 .banner-buy-btn{
     display: inline-block;
     padding: 15px 60px;
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
     color: #000;
-    /* border: 1px solid #000; */
     transition: all .2s ease-in;
     background-color: #8fc843;
-    /* box-shadow: rgb(143 200 67 / 37%) 0px 6px 42px 2px; */
 }
 .banner-buy-btn-secondary{
     display: inline-block;
     padding: 15px 60px;
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
     color: #000;
-    /* border: 1px solid #000; */
     transition: all .2s ease-in;
     background-color: #fff;
-    /* box-shadow: rgb(143 200 67 / 37%) 0px 6px 42px 2px; */
 }
 .banner-buy-btn-secondary:hover{
     text-decoration: none;
@@ -71,6 +75,11 @@
     text-decoration: none;
     color: #fff;
     transform: translateY(-5px);
+}
+.hp-overlay-content h5{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
 }
 @media only screen and (max-width:992px){
     .hp-overlay-content h2 {
@@ -106,7 +115,6 @@
 [data-customClass='trustpilot_reviews'] iframe {
     height:1000px;
     overflow: auto;
-    /* background: red; */
 }
 
 
@@ -114,7 +122,6 @@
     [data-customClass='trustpilot_reviews'] iframe {
         height:600px;
         overflow: auto;
-        /* background: red; */
     }
 }
 
@@ -125,14 +132,15 @@
     width: 100%;
     padding: 60px 0;
 }
-.cc-heading{
-    font-size: 35px;
-    line-height: 1.3;
+.cc-heading{    
     color: #333;
     max-width: 600px;
     margin: 0 auto;
-    font-weight: 600;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
 }
 .customer-images{
     width: 90%;
@@ -176,8 +184,7 @@
 }
 @media only screen and (max-width:600px) {
     .cc-heading{
-        font-size: 25px;
-        line-height: 1.3;
+        font-size: 1.5rem;
     }
 }
 @media only screen and (max-width: 450px){
@@ -191,11 +198,12 @@
     margin: 0 auto;
 }
 .sc-heading{
-    font-size: 35px;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
     color: #333;
     margin: 0 auto;
-    font-weight: 600;
     text-align: center;
 }
 .charging-box-row{
@@ -218,6 +226,12 @@
 .charging-box_right{
     width: 40%;
 }
+.charging-box_content h3 {
+    font-size: 1.75rem;
+    font-family: pt sans, sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+}
 @media only screen and (max-width:800px) {
     .charging-box-row{
         flex-direction: column;
@@ -228,15 +242,14 @@
     }
 }
 @media only screen and (max-width:600px) {
-    .sc-heading {
-        font-size: 25px;
-        line-height: 1.3;
-    }
     .charging-box-imgwrap {
         height: 230px;
     }
+    .sc-heading{
+        font-size: 1.5rem;
+    }
     .charging-box_content h3{
-        font-size: 25px;
+        font-size: 1.3rem;
     }
 }
 
@@ -246,8 +259,10 @@
     margin: 0 auto;
 }
 .se-heading{
-    font-size: 35px;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
     color: #333;
     margin: 0 auto;
     font-weight: 600;
@@ -270,12 +285,12 @@
     object-fit: cover;
 }
 .contact-evfuel-content p{
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.6;
     letter-spacing: 0em;
     text-align: center;
-
+    min-height: 55px;
 }
 .ce-btn{
     text-align: center;
@@ -283,8 +298,9 @@
     justify-content: center;
     background: #E28E73;
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.6;
     padding: 12px 0;
     transition: all .3s ease;
 }
@@ -310,8 +326,7 @@
 }
 @media only screen and (max-width:600px) {
     .se-heading {
-        font-size: 25px;
-        line-height: 1.3;
+        font-size: 1.5rem;
     }
 }
 /* ============= section 5 ================ */
@@ -329,38 +344,51 @@
 }
 .mp-heading{
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 1.5rem;
     color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
 }
 .include-content{
     padding: 20px 0;
 }
-.benefits-content h2{
+.benefits-content h4{
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
 }
 .most-popular_content p{
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .include-content li{
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.6;
     list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-.include-content h2{
+.include-content h4{
     color: #333;
     margin-bottom: 20px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
 }
 .benefits-content li {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 36px;
     list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .most-popular_right{
     width: 50%;
@@ -391,24 +419,11 @@
     }
 }
 @media only screen and (max-width:600px){
-    .mp-heading{
-        font-size: 25px;
-        font-weight: 600;
-    }
     .most-popular-imgwrap{
         height: 300px;
     }
     .most-popular-imgwrap img{
         border-radius: 34px;
-    }
-    .include-content .benefits-content, h2{
-        font-size: 25px;
-    }
-    .most-popular_content li{
-        font-size: 19px;
-    }
-    .most-popular_content p{
-        font-size: 19px;
     }
 }
 /* ============== section 6 =========== */
@@ -445,16 +460,19 @@
 }
 .db-heading{
     font-style: normal;
+    font-size: 2rem;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 54px;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
+    color: #fff;
 }
 .dicovery-banner_wrap p{
     font-style: normal;
+    font-size: 1rem;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 36px;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     margin-top: 30px;
     max-width: 600px;
@@ -482,9 +500,10 @@
 .hp-btn span {
     position: relative;
     display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     top: 0;
     left: 0;
@@ -518,12 +537,8 @@
 }
 
 @media only screen and (max-width:600px){
-    .db-heading{
-        font-size: 35px;
-    }
     .dicovery-banner_wrap p{
         max-width: 400px;
-        font-size: 19px;
     }
     .dicovery-banner_wrap {
         padding: 114px 0 80px 0;
@@ -544,13 +559,15 @@
     padding: 64px 0;
 }
 .section-faq .faq-heading {
-    font-size: 35px;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.3;
-    max-width: 600px;
+    font-family: 'PT Sans', sans-serif;
+    color: #333;
     margin: 0 auto;
-    font-weight: 600;
     text-align: center;
 }
+
 .section-faq .faq-wrap {
     margin: 2em auto;
     width: 75%;
@@ -584,9 +601,10 @@
 }
 .section-faq .accordion button .accordion-title {
     padding: 1em 1.5em 1em 0;
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .section-faq .accordion button .icon svg {
     fill: #101010;
@@ -596,7 +614,7 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 1em;
+    width: .8em;
 }
 .section-faq .accordion button .icon svg svg:not(:root) {
     overflow: hidden;
@@ -629,9 +647,10 @@
     color: #101010;
 }
 .section-faq .accordion .accordion-content p {
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 @media only screen and (max-width:768px){
     .section-faq .faq-wrap{
@@ -639,20 +658,14 @@
     }
     .section-faq .accordion button {
         padding: 0.8em 2em 0.8em 1em;
-        font-size: 20px;
     }
 }
 @media only screen and (max-width:600px){
-    .section-faq .accordion button .accordion-title {
-        font-size: 20px;
-        line-height: 20px;
-    }
-    .section-faq .accordion .accordion-content p{
-        font-size: 20px;
-    }
     .section-faq .accordion button .icon svg{
-        width: 0.9em;
-        height: 0.9em;
+        right: 10px;
+    }
+    .section-faq .faq-heading{
+        font-size: 1.5rem;
     }
 }
 /* ================= section 8 ================== */
@@ -669,14 +682,23 @@
     color: #333;
 }
 .wy-heading h4{
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #333;
     font-weight: 400;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
 }
 .wy-heading h1{
-    font-size: 35px;
-    line-height: 1.3;
     margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
+    color: #333;
     font-weight: 600;
     text-align: center;
+    font-size: 2rem;
 }
 .places-wrapper{
     display: flex;
@@ -691,6 +713,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.place-content h4{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif; 
 }
 @media only screen and (max-width:1200px){
     .places-wrapper {
@@ -721,11 +750,10 @@
 }
 @media only screen and (max-width:600px){
     .wy-heading h1{
-        font-size: 25px;
-        line-height: 1.3;
+        font-size: 1.5rem;
     }
     .wy-heading h4{
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 }
 @media only screen and (max-width:500px) {
@@ -743,8 +771,10 @@
 }
 .section-appricated .heading{
     text-align: center;
-    font-size: 35px;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
     color: #333;
     margin: 0 auto;
     font-weight: 600;
@@ -772,9 +802,11 @@
     object-fit: cover;
 }
 .section-appricated_title h2{
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.3;
+    font-family: pt sans, sans-serif;
 }
 
 @media only screen and (max-width:992px){
@@ -798,13 +830,11 @@
         height: 300px;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width:600px){
     .section-appricated .heading{
-        font-size: 25px;
-        line-height: 1.3;
+        font-size: 1.5rem;
     }
     .section-appricated_title h2{
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 1.3rem;
     }
 }
