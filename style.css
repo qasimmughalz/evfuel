@@ -113,22 +113,40 @@
 }
 
 [data-customClass='trustpilot_reviews'] iframe {
-    height:1000px;
-    overflow: auto;
+    height: 900px !important;
+    /* overflow: auto; */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    /* background: red; */
 }
 
+[data-customClass='trustpilot_reviews'] iframe::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.tp-widget-reviews-grid{
+    overflow: hidden;
+}
 
 @media only screen and (max-width:768px) {
     [data-customClass='trustpilot_reviews'] iframe {
         height:600px;
         overflow: auto;
+        height:700px !important;
+        /* overflow: auto; */
+    }
+}
+@media only screen and (max-width:600px) {
+    [data-customClass='trustpilot_reviews'] iframe {
+        height:500px !important;
+        /* overflow: auto; */
     }
 }
 
 /* ========= section 2 ============ */
 
 
-.customer-conatiner{
+/* .customer-conatiner{
     width: 100%;
     padding: 60px 0;
 }
@@ -191,7 +209,8 @@
     .customer-images {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
+
 /* ========== section 3 ========== */
 .charging-box-container{
     width: 90%;
@@ -400,7 +419,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 88px;
+    border-radius: 3px;
 }
 @media only screen and (max-width:1200px){
     .most-popular-imgwrap {
@@ -781,8 +800,47 @@
     text-align: center;
 }
 .section-appricated-imgwrap{
+    position: relative;
     height: 350px;
+    background: url('./m3.jpg');
+    transition: 0.5s ease-in;
 }
+
+.section-appricated-imgwrap .content{
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+}
+
+.section-appricated-imgwrap::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s ease-in;
+    background-color: rgba(0,0,0,0.7);
+}
+/* .section-appricated-imgwrap:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0,0,0,0.5);
+} */
+
+
+
 .section-appricated_wrap{
     display: flex;
     gap: 50px;
@@ -795,12 +853,7 @@
 .section-appricated_right{
     width: 50%;
 }
-.section-appricated_wrap img{
-    border-radius: 68px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 .section-appricated_title h2{
     font-size: 1.75rem;
     text-align: center;
