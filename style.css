@@ -9,8 +9,35 @@
 .text-green{
     color:#8fc843
 }
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
 
+.ce-btn-border{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    border: 1px solid #000;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 12px 0;
+    transition: all .3s ease;
+}
+.ce-btn-border:hover{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    transform: translateY(-5px);
+    box-shadow: rgba(38, 37, 37, 0.187) 0px 5px 15px;
+}
 /* ============== section 1 ============ */
 
 .hp-banner{
@@ -21,6 +48,7 @@
     background-position: center center;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .hp-overlay-content h2 {
     font-size: 2.36em;
     font-weight: 300;
@@ -102,6 +130,91 @@
         font-size: 1.8rem;
     }
 }
+
+
+
+/* ============ GREENER FUTURE =============== */
+.hp-banner-green{
+    position: relative;
+    background-image: url(greener-future.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hp-overlay-green-content h2 {
+    font-size: 2.36em;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
+.hp-banner-green::after{
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 1;
+    background: rgb(13,0,0);
+    background: linear-gradient(90deg, rgba(13,0,0,1) 25%, rgba(255,255,255,0) 88%);
+}
+.hp-banner-green .hp-overlay-green{
+    z-index: 2;
+    display: flex;
+    position: relative;
+    padding: 13rem 3rem 5rem;
+}
+.banner-buy-btn{
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    transition: all .2s ease-in;
+    background-color: #8fc843;
+}
+
+.banner-buy-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(-5px);
+}
+.hp-overlay-green-content h5{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+@media only screen and (max-width:992px){
+    .hp-overlay-content-green h2 {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width:600px) {
+    .hp-overlay-content-green h2 {
+        font-size: 2rem;
+    }
+    .hp-banner-green .hp-overlay-green{
+        padding: 8rem 1rem 5rem;
+    }
+    .banner-buy-btn{
+        padding: 8px 20px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .hp-overlay-content-green h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+/* ================= end ============== */
+
 
 
 /* ==================  SECTION 2 TRUSTPILOT ====================== */
@@ -710,6 +823,8 @@
 }
 
 
+
+
 /* ================= section 8 ================== */
 .wy-heading h4{
     font-style: normal;
@@ -892,12 +1007,62 @@
 } */
 
 
+/* ============ HOVER BOXES CUSTOM ============== */
+
+
+.hover-box-data{
+    overflow: hidden;
+    position: relative;
+    background-image: url('greener-future.jpg');
+    height: 60vh;
+}
+
+.hover-box-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: right top ;
+}
+
+
+.hover-box-img .content{
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 90%;
+}
+.hover-box-img .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.hover-box-data::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s ease-in;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+/* =============== */
+
 
 .section-appricated_wrap{
     display: flex;
     gap: 40px;
     align-items: center;
-    padding-top: 64px;
+    padding-top: 24px;
 }
 .section-appricated_left{
     width: 50%;
