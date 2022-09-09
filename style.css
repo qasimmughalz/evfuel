@@ -467,6 +467,7 @@ body::-webkit-scrollbar {
     .contact-evfuel_row{
         flex-direction: column;
         gap: 30px;
+        padding: 30px 0px 30px 0px;
     }
     .contact-evfuel_box{
         width: 100%;
@@ -1124,3 +1125,18 @@ body::-webkit-scrollbar {
         font-size: 1.3rem;
     }
 }
+
+
+/* ======== CUSTOM PRODUCTS =============== */
+
+.custom-products .product-image{
+    height: 300px;
+    width: 100%;
+}   
+
+.custom-products .product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}   
