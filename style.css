@@ -18,6 +18,22 @@ body::-webkit-scrollbar {
 }
 
 
+.general-heading{
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'PT Sans', sans-serif;
+}
+@media only screen and (max-width:600px) {
+    .general-heading{
+        font-size: 1.5rem;
+    }
+}
+
 .ce-btn-border{
     text-align: center;
     display: flex;
