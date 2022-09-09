@@ -315,8 +315,8 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    background: #E28E73;
-    color: #fff;
+    background: #8fc843;
+    color: #000;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
@@ -460,6 +460,15 @@
 }
 /* ============== section 6 =========== */
 
+.dicovery-banner-green{
+    background-attachment: scroll !important;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .dicovery-banner{
     width: 100%;
     background-position: center;
@@ -544,7 +553,7 @@
     transition: 0.3s;
 }
 .gs-btn::before {
-    background: #E28E73;
+    background: #8fc843;
     transition: 0.3s ease-out;
 }
 .gs-btn span {
@@ -699,19 +708,9 @@
         font-size: 1.5rem;
     }
 }
-/* ================= section 8 ================== */
 
-.where-you-charge_container{
-    width: 100%;
-}
-.where-you-charge{
-    width: 90%;
-    margin: 0 auto;
-}
-.wy-heading{
-    text-align: center;
-    color: #333;
-}
+
+/* ================= section 8 ================== */
 .wy-heading h4{
     font-style: normal;
     font-size: 1.5rem;
@@ -731,29 +730,26 @@
     text-align: center;
     font-size: 2rem;
 }
-.places-wrapper{
-    display: flex;
-    gap: 30px;
-    padding: 35px 0;
-}
-.place-item{
+
+.section-anyplace .box{
     position: relative;
     overflow: hidden;
-    width: 25%;
 }
-.place-item:hover img{
+.section-anyplace .box:hover img{
     opacity: 0.7;
     transform: scale(1.06);
 }
-.place-imgwrap{
+
+.section-anyplace .box{
     height: 230px;
     margin-bottom: 0;
 }
-.place-imgwrap img{
+.section-anyplace .box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-        transition: all .2s ease;
+    object-position: center center;
+    transition: .2s ease;
 }
 .place-imgwrap::before{
     content: '';
@@ -784,11 +780,7 @@
     font-family: 'PT Sans', sans-serif; 
     text-align: center;
 }
-/* @media only screen and (max-width:1200px){
-    .places-wrapper {
-        gap: 30px;
-    }
-} */
+
 @media only screen and (max-width:1024px) {
     .place-imgwrap{
         height: 350px;
