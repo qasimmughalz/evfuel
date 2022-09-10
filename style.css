@@ -62,13 +62,18 @@ body::-webkit-scrollbar {
 
 /* ================ FLYER ==================== */
 
+.shadow-award-left{
+    box-shadow: rgba(143, 200, 67, 1) -5px 5px, rgba(170, 214, 113, 1)
+    -10px 10px, rgba(189, 223, 144, 1) -15px 15px 
+}
+.shadow-award-right{
+    box-shadow: rgba(143, 200, 67, 1)  5px 5px, rgba(170, 214, 113, 1) 10px 10px, rgba(189, 223, 144, 1) 15px 15px
+}
 .flyer{
-    /* border: 0.5px solid #8fc843; */
     background-color: #ddf1c6;
     border: .2rem solid #d4e7bc;
     border-radius: 1rem;
     transition: all 0.9s ease-in-out !important;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
 }
 .flyer-check-circle{
     height: 20px;
@@ -87,24 +92,6 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-@media only screen and (min-width:600px) {
-.flyer img{
-    filter: brightness(0) !important;
-    filter: blur(0);
-    transition: all 0.9s ease-in-out !important;
-}
-.flyer:hover img{
-    transition: all 0.9s ease-in-out !important;
-    filter: brightness(0.5) !important;
-    filter: blur(1);
-    filter: drop-shadow(2px 4px 6px black) !important;
-}
-}
-
-
-
-
 
 
 
