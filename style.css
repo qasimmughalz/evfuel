@@ -77,6 +77,9 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     background-color: #8fc843;
 }
+.flyer-check-circle + p{
+    width: calc(100% - 20px);
+}
 .flyer-check-circle i{
     font-size: 10px;
     position: absolute;
@@ -84,6 +87,8 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+@media only screen and (min-width:600px) {
 .flyer img{
     filter: brightness(0) !important;
     filter: blur(0);
@@ -94,6 +99,7 @@ body::-webkit-scrollbar {
     filter: brightness(0.5) !important;
     filter: blur(1);
     filter: drop-shadow(2px 4px 6px black) !important;
+}
 }
 
 
