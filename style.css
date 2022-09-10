@@ -57,6 +57,53 @@ body::-webkit-scrollbar {
     transform: translateY(-5px);
     box-shadow: rgba(38, 37, 37, 0.187) 0px 5px 15px;
 }
+
+
+
+/* ================ FLYER ==================== */
+
+.flyer{
+    /* border: 0.5px solid #8fc843; */
+    background-color: #ddf1c6;
+    border: .2rem solid #d4e7bc;
+    border-radius: 1rem;
+    transition: all 0.9s ease-in-out !important;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+.flyer-check-circle{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #8fc843;
+}
+.flyer-check-circle i{
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.flyer img{
+    filter: brightness(0) !important;
+    filter: blur(0);
+    transition: all 0.9s ease-in-out !important;
+}
+.flyer:hover img{
+    transition: all 0.9s ease-in-out !important;
+    filter: brightness(0.5) !important;
+    filter: blur(1);
+    filter: drop-shadow(2px 4px 6px black) !important;
+}
+
+
+
+
+
+
+
+/* ================ FLYER END ==================== */
+
 /* ============== section 1 ============ */
 
 .hp-banner{
@@ -956,7 +1003,7 @@ body::-webkit-scrollbar {
 
 /* =========== appricated ========== */
 /* .award-images img{
-    height: 90px;
+    filter: drop-shadow(2px 4px 6px black);
 } */
 
 .section-appricated{
