@@ -800,7 +800,7 @@ body::-webkit-scrollbar {
     outline: none;
     border: 0;
     font-weight: 400;
-    padding: 0.8em 2.2em 0.8em 1.2em;
+    padding: 0px 0.5rem 0.5rem 1.5rem;
     position: relative;
     width: 100%;
     color: #101010;
@@ -886,7 +886,7 @@ body::-webkit-scrollbar {
 
 
 
-/* ================= section 8 ================== */
+/* ================= section 8 ======faq============ */
 .wy-heading h4{
     font-style: normal;
     font-size: 1.5rem;
