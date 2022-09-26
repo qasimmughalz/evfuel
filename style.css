@@ -9,6 +9,11 @@
 .text-green{
     color:#8fc843
 }
+
+.bg-green{
+    background-color: #8fc843;
+}
+
 body {
     -ms-overflow-style: none; 
     scrollbar-width: none;  
@@ -58,6 +63,33 @@ body::-webkit-scrollbar {
     box-shadow: rgba(38, 37, 37, 0.187) 0px 5px 15px;
 }
 
+/* ================== ONTACT US PAGE ================ */
+
+.small-circle{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: #8fc843;
+    border-radius: 50%;
+}
+
+.small-circle i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width:600px) {
+    .small-circle{
+        text-align: center;
+        margin:auto;
+    }
+
+}
+
+
+
 
 
 /* ================ FLYER ==================== */
@@ -101,10 +133,10 @@ body::-webkit-scrollbar {
 
 .hp-banner{
     position: relative;
-    background-image: url(bg2.jpg);
+    background-image: url(FINALIZING/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 20% 30%;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -182,6 +214,9 @@ body::-webkit-scrollbar {
     }
     .banner-buy-btn, .banner-buy-btn-secondary{
         padding: 8px 20px;
+    }
+    .hp-banner{
+        background-position: 85% 50%;
     }
 }
 @media only screen and (max-width:400px) {
@@ -444,7 +479,118 @@ body::-webkit-scrollbar {
     }
 }
 
-/* =========== section 4 ============== */
+/* ============= Contact Us Overlay Page =========== */
+.contact-pills li{
+    list-style: none;
+    border-radius: 16px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 12px;
+    white-space: nowrap;
+    margin: 8px 2px;
+}
+
+
+.contact-timing{
+    border:.2rem solid #d4e7bc;
+    border-radius: 1rem;
+    background-color: #ddf1c6;
+}
+
+.contact-boxes{
+    min-height: 260px;
+    border-radius: 1rem;
+}
+
+.image-box-overlay-contact{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+.image-box-overlay-contact img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.image-box-overlay-contact-text{
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.image-box-overlay-contact::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    display: block;
+    background-color: rgb(16, 16, 16, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* =========== You Need Help With  ============== */
+
+
+.image-box-overlay{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+.image-box-overlay img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.image-box-overlay-text{
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.image-box-overlay::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    display: block;
+    background-color: rgb(16, 16, 16, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
 .contact-evfuel{
     width: 90%;
     margin: 0 auto;
@@ -769,7 +915,7 @@ body::-webkit-scrollbar {
 }
 
 
-/* ============= section 7 ============== */
+/* ============= faqs ============== */
 .section-faq {
     padding: 64px 0;
 }
